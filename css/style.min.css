@@ -1,0 +1,693 @@
+body {
+    height: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #8F0475;
+    position: relative;
+    low-x: hidden;
+    background-color: #FEF4FC;
+    overflow-x: hidden;
+    margin: 0
+}
+
+button.navDown {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    background: url(../img/navDown.png) center no-repeat rgba(51, 51, 51, .9);
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    margin: 0;
+    border: 0;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px
+}
+
+.section {
+    position: relative;
+    padding-top: 70px;
+    width: 100%;
+    min-width: 100%;
+    margin-top: -5px
+}
+
+.bg {
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/roof.jpeg);
+    background-color: #f2d9f2;
+    background-repeat: no-repeat;
+    background-position: 625px 0;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 10em 0
+}
+
+@media screen and (min-width: 1386px) {
+    .bg {
+        background-position: 980px 2em
+    }
+}
+
+@media screen and (max-width: 1385px) {
+    .bg {
+        background-position: 720px 2em
+    }
+}
+
+@media screen and (max-width: 1092px) {
+    .bg {
+        background-position: 667px 2em
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .bg {
+        background-position: 500px 0;
+        background-attachment: scroll
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bg {
+        background-position: 300px 4.3em;
+        background-attachment: scroll
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .bg {
+        background-position: 250px 4.3em;
+        background-attachment: scroll
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .bg {
+        background-position: 240px 4.3em;
+        background-attachment: scroll
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bg {
+        background-position: 220px 4.3em;
+        background-attachment: scroll
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .bg {
+        background-position: 120px 4.3em;
+        background-attachment: scroll
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bg {
+        background-position: 80px 4.3em;
+        background-attachment: scroll
+    }
+}
+
+.about, .intro, .services {
+    bottom: 0;
+    right: 0;
+    background-color: #FEF4FC;
+    /*    background-image: url(../img/bg_white_stripe.png);
+        background-image: url(../img/bg_white_stripe.png), -moz-linear-gradient(top, rgba(255, 255, 255, .3) 0, rgba(0, 157, 224, .2) 100%);
+        background-image: url(../img/bg_white_stripe.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, .3)), color-stop(100%, rgba(0, 157, 224, .2)));
+        background-image: url(../img/bg_white_stripe.png), -webkit-linear-gradient(top, rgba(255, 255, 255, .3) 0, rgba(0, 157, 224, .2) 100%);
+        background-image: url(../img/bg_white_stripe.png), -ms-linear-gradient(top, rgba(255, 255, 255, .3) 0, rgba(0, 157, 224, .2) 100%);
+        background-image: url(../img/bg_white_stripe.png), linear-gradient(to bottom, rgba(255, 255, 255, .3) 0, rgba(0, 157, 224, .2) 100%)
+    */
+}
+
+.blog {
+    padding: 60px 0;
+    background-color: #fff
+}
+
+.contact {
+    padding: 60px 0 0;
+    background-color: #fff
+}
+
+#loader {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 9999;
+    background-color: #fff
+}
+
+#update {
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    background-image: url(../img/spinning_cogs.gif);
+    background-repeat: no-repeat
+}
+
+.jumbotron {
+    margin-right: -15px;
+    padding: 66px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: #fff;
+    background-color: transparent
+}
+
+.quote {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+blockquote {
+    border-left: 0;
+    text-align: center;
+    color: #fff
+}
+
+blockquote cite {
+    display: block;
+    font-size: 17px;
+    text-transform: uppercase
+}
+
+blockquote cite:before {
+    content: "\2014 \0020"
+}
+
+blockquote cite:after {
+    content: "\0020 \2014"
+}
+
+q:after, q:before {
+    content: "\0022"
+}
+
+.fbox .ficon {
+    margin: 15px auto;
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    border: 10px double #fff
+}
+
+.ficon.heart {
+    background-color: #007cc0
+}
+
+.ficon.cloud {
+    background-color: #003283
+}
+
+.ficon.comments {
+    background-color: #ab218e
+}
+
+.ficon.cog {
+    background-color: #f27020
+}
+
+.fbox .ficon i {
+    color: #fff;
+    font-size: 4em;
+    line-height: 2em
+}
+
+.fbox {
+    text-align: center
+}
+
+.tile {
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+    margin-top: .5em;
+    margin-bottom: 5.5em;
+    text-align: center;
+    border: 1px solid #ddd;
+    display: inline-block;
+    -webkit-transition-property: transform3d;
+    -webkit-transition-duration: .8s;
+    -moz-transition-property: transform3d;
+    -moz-transition-duration: .8s;
+    transition-property: transform3d;
+    transition-duration: .8s;
+    height: 20em;
+    padding: 1em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-color: #fff;
+    width: 100%
+}
+
+.tile > h2 {
+    color: #007cc0
+}
+
+#inquire input {
+    margin: 0;
+    padding: 14px 10px;
+    border: 1px solid #eee;
+    width: 98%;
+    color: #abadb7;
+    box-shadow: none;
+    background-color: #eee
+}
+
+textarea {
+    width: 100%
+}
+
+#inquire textarea {
+    margin: 0;
+    padding: 14px 10px;
+    border: 1px solid #eee;
+    width: 98%;
+    color: #abadb7;
+    box-shadow: none;
+    background-color: #eee
+}
+
+.contact-form div {
+    margin-bottom: 25px
+}
+
+.contact-block {
+    margin-left: 15px;
+    line-height: 28px;
+    font-size: 18px
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #2e2d2d;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 30px;
+    line-height: 40px;
+    text-align: center
+}
+
+.blue.btn {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.75em;
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #333;
+    text-shadow: 0 .063rem 0 #fff;
+    border: 1px solid #bfbfbf;
+    vertical-align: top;
+    border-radius: 0
+}
+
+.form-control {
+    border-radius: 0
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px
+}
+
+.navbar {
+    border-top: .25em solid #FCECF9;
+    z-index: 999 !important;
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    margin-bottom: 6px;
+    /*    background: linear-gradient(top, #f7f7f7 0, #f2f2f2 33%, #f2f2f2 75%, #ededed 100%); */
+    background-color: #FCECF9;
+    -webkit-box-shadow: inset 0 -.0625em #ddd;
+    box-shadow: inset 0 -.0625em #ddd;
+    background-image: -webkit-linear-gradient(top,  #FEF4FC 0,  #FEF4FC 33%,  #FEF4FC 75%, #ededed 100%)
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 55px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px
+}
+
+.navbar-nav a {
+    color: #009de0
+}
+
+.navbar-nav a:hover {
+    color: #fff;
+    border: 0
+}
+
+.navbar ul li > a {
+    padding-right: 15px;
+    color: #8F0475;
+    */ height: 300px;
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+#nav1 .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0
+}
+
+#nav1 .navbar ul li {
+    line-height: 1.6em;
+    margin-top: 0px
+}
+
+#nav1 .nav .pull-right {
+    padding-right: 20px
+}
+
+#nav1 .navbar .navbar-nav > .active > a, .navbar ul li .active > a {
+    background-color: #f2f2f2 !important;
+    color: #8F0475;
+    background: #660066;
+    box-shadow: inset 0 -.07em 0 #ddd
+}
+
+.navbar > .container .navbar-brand {
+    margin-left: 15px
+}
+
+.navbar-brand span {
+    font-size: 24px;
+    font-weight: 400;
+    color: #c8c8c8;
+    -webkit-box-shadow: inset 1 1 0 2 rgba(0, 0, 0, .3);
+    -moz-box-shadow: inset 1 1 0 2 rgba(0, 0, 0, .3);
+    box-shadow: inset 1 1 0 2 rgba(0, 0, 0, .3)
+}
+
+.navbar .nav > .active > a:hover, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
+    background-color: #f2f2f2 !important;
+    color: #8F0475
+}
+
+#nav1.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+#nav1.affix-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 0
+}
+
+#foot.affix {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100%
+}
+
+#foot {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+    margin-bottom: 0;
+    right: 0;
+    color: #fff;
+    background-color: rgba(51, 51, 51, .9);
+    min-height: 3em;
+    border: 0;
+    background-image: none
+}
+
+#foot .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 15px
+}
+
+#foot .navbar-inner {
+    border-width: 0;
+    height: 3.5em;
+    overflow: hidden;
+    background: rgba(51, 51, 51, .5);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding-right: 0;
+    padding-left: 0
+}
+
+#foot .nav > li {
+    line-height: 1.7em;
+    margin-top: 0
+}
+
+#foot .nav > li > a {
+    font-size: 2em;
+    float: none;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    text-shadow: 0 .063em 0 rgba(0, 0, 0, .5);
+    border-left: .063em solid rgba(0, 0, 0, .5);
+    border-right: .063em solid rgba(0, 0, 0, .5)
+}
+
+#foot .icontext span {
+    vertical-align: middle;
+    font-size: 16px
+}
+
+#foot .nav > li > a:hover {
+    background: rgba(51, 51, 51, .5);
+    color: #fff
+}
+
+.carousel-caption {
+    position: absolute;
+    background: #333;
+    background: rgba(0, 0, 0, .75);
+    padding: 15px 0 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.carousel-caption > p > a {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5
+}
+
+.carousel-control {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 29px;
+    color: #fff !important;
+    text-align: center;
+    background: #222;
+    border: 3px solid #fff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    text-decoration: none !important
+}
+
+.carousel-control.left {
+    left: 30px;
+    right: auto
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 30px
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media (max-width: 720px) {
+    #nav1, #nav1.affix {
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+
+    #foot, #foot.affix {
+        display: none
+    }
+
+    #nav1 .navbar-toggle .icon-bar {
+        background-color: #ccc
+    }
+
+    .navbar-static-top {
+        margin-right: 0;
+        margin-left: 0
+    }
+
+,.collapse .nav > li > a {
+     padding: 9px 15px;
+     font-weight: 400;
+     border-radius: 0;
+     margin-bottom: 0
+ }
+
+    #navmenu {
+        background: rgba(51, 51, 51, 100) !important;
+        margin: 7.5px -15px;
+        color: #fff
+    }
+
+    #navmenu li a {
+        display: block;
+        width: 100%;
+        border-top: .0625em solid rgba(229, 229, 229, .2);
+        border-bottom: .0625em solid rgba(0, 0, 0, .6);
+        height: 3em;
+        text-shadow: 0 -.0625 0 rgba(0, 0, 0, .6);
+        box-sizing: border-box;
+        vertical-align: top;
+        color: #fff !important
+    }
+
+    #navmenu li a:hover {
+        background-color: rgba(51, 51, 51, .98) !important;
+        color: #fff !important;
+        border: 0
+    }
+
+    #foot .navbar-inner {
+        height: 3.5em
+    }
+
+    #foot .nav > li > a {
+        font-size: 2em
+    }
+
+    .jumbotron:before {
+        padding: 0;
+        content: '';
+        display: inline-block;
+        height: 100%;
+        margin-right: -.25em;
+        vertical-align: middle
+    }
+
+    .jumbotron {
+        margin-right: 0;
+        padding: 0;
+        margin-bottom: 0;
+        font-weight: 200
+    }
+
+    .bg {
+        padding-top: 50px
+    }
+
+    .popover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1010;
+        display: none;
+        max-width: 276px;
+        padding: 0;
+        background-color: rgba(51, 51, 51, 9);
+        width: 120px;
+        text-align: left;
+        white-space: normal;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 6px;
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        background-clip: padding-box;
+        color: #fff
+    }
+
+    .popover-content {
+        padding: 0;
+        padding-right: 30px
+    }
+
+    .popover.bottom {
+        margin-top: 30px
+    }
+
+    .popover.bottom .arrow {
+        top: -18px;
+        margin-left: -20px
+    }
+
+    .popover .arrow {
+        top: -9px;
+        z-index: 1000 !important
+    }
+
+    .arrow {
+        border-width: 20px
+    }
+
+    .popover .arrow:after {
+        border-width: 20px;
+        content: ""
+    }
+
+    .popover.bottom .arrow:after {
+        top: 1px;
+        margin-left: -20px;
+        border-bottom-color: rgba(51, 51, 51, 100) !important;
+        border-top-width: 0
+    }
+}
