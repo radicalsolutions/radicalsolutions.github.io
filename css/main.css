@@ -151,7 +151,7 @@ ul, ol{
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #96ADE8 !important;
+    color: #B7A6CB !important;
     background-color: transparent;
     font-weight: 700;
 }
@@ -316,7 +316,6 @@ img.img-circle.team-img {
     border: 4px solid #00B0FF;
 }
 #tf-team .thumbnail {
-    /*background-color: rgba(5,5,5,0.8);*/
     background-color: rgba(28,28,28,0.8);
     padding: 10px 10px !important;
     margin: 5px 5px !important;
@@ -324,7 +323,6 @@ img.img-circle.team-img {
     min-width: 235px;
     max-width: 570px;
     overflow: hidden;
-    /*margin: auto;*/
 }
 .team-networks li {
     display: inline-block;
